@@ -5,8 +5,9 @@ body {
       min-height: 100vh;
       overflow-x: hidden;
     }
-html {
-      scroll-behavior:smooth;
+
+    html {
+        scroll-behavior: smooth;
     }
 
     .cyber-bg {
@@ -143,6 +144,16 @@ html {
       transform: scale(1.02) translateY(-5px);
       border-color: rgba(76, 215, 246, 0.4);
       z-index: 10;
+    }
+    .wall-card img {
+      filter: blur(10px);
+      transform: scale(1.05);
+      transition: 0.4s;
+    }
+    
+    .wall-card img.loaded {
+      filter: blur(0);
+      transform: scale(1);
     }
 
     .card-overlay {
